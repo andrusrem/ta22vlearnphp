@@ -2,15 +2,15 @@
 
 use App\Models\User;
 
-function dump(...$variables){
-    echo '<pre>';
-    var_dump(...$variables);
-    echo '</pre>';
-}
-function dd(...$variables){
-    dump(...$variables);
-    die;
-}
+// function dump(...$variables){
+//     echo '<pre>';
+//     var_dump(...$variables);
+//     echo '</pre>';
+// }
+// function dd(...$variables){
+//     dump(...$variables);
+//     die;
+// }
 
 function view($viewName, $vars = []){
     extract($vars);

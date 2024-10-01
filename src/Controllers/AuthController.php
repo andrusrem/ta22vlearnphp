@@ -9,8 +9,6 @@ class AuthController
 
     public function registerForm()
     {
-
-
         view('auth/register');
     }
     public function register()
@@ -42,7 +40,6 @@ class AuthController
     }
     public function logout()
     {
-
         unset($_SESSION['userId']);
         redirect('/');
     }
