@@ -2,6 +2,11 @@
 
 <main class="container">
   <form method="GET" action="/admin/posts/view?id=<?=$post->id?>">
+  
+    <div class="mb-3">
+      <label for="title" class="form-label">ID</label>
+      <input disabled name="title" type="text" class="form-control" id="title" value="<?=$post->id?>">
+    </div>
     <div class="mb-3">
       <label for="title" class="form-label">Title</label>
       <input disabled name="title" type="text" class="form-control" id="title" value="<?=$post->title?>">
