@@ -9,9 +9,9 @@ if (preg_match('/\.(?:png|jpg|jpeg|gif|css|js)$/', $_SERVER["REQUEST_URI"])) {
 require __DIR__ . '/../vendor/autoload.php';
 
 session_start();
-require 'helpers.php';
+require __DIR__ . '/../helpers.php';
 
-require 'routes.php';
+require __DIR__ . '/../routes.php';
 
 
 $router = new Router($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);

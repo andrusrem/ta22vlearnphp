@@ -27,7 +27,8 @@ class PostsController
         redirect('/admin/posts');
     }
     public function show(){
-
+        $post = Post::find($_GET['id']);
+        view('posts/view', compact('post'));
     }
     public function edit(){
         $post = Post::find($_GET['id']);

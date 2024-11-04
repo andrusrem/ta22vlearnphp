@@ -1,5 +1,5 @@
 {
-    "name": "kaspar.martin.suursa/learnphp",
+    "name": "andru/ta22vlearnphp",
     "type": "project",
     "license": "WTFPL",
     "autoload": {
@@ -9,14 +9,9 @@
     },
     "authors": [
         {
-            "name": "Kaspar Martin Suursalu",
-            "email": "kasparsu@gmail.com"
+            "name": "andrusrem",
+            "email": "andrusremets@gmail.com"
         }
     ],
-    "require": {
-        "symfony/var-dumper": "^7.1"
-    },
-    "scripts": {
-        "server": "php -S localhost:8000 -t public public/index.php"
-    }
+    "require": {}
 }
